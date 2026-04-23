@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_helm_render
+
+import std::io
+use ltl_helm_render as lib
+
+fn main() {
+    io::println("ltl_helm_render demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
